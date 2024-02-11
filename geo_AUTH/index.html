@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 7</title>
+    <link rel="stylesheet" href="main.css">
+    <script defer src="project7.js"></script>
+    <script defer src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={key_here}&callback=initMap" async defer></script>
+
+</head>
+<body>
+    <main id="container">
+        <div id="singinContainer" >            
+            <h1>Login</h1>
+            <form action="submit" id="signinForm"> 
+                <input type="text" id="loginUsername" placeholder="username"autocomplete="off"> 
+                <div id="singin-mapContainer">
+                    <div id="map"></div>    
+                </div>
+                <div id="passFoundContainer">&nbsp;        
+                </div>
+                <div id="smalls">
+                    <button id="singinSubmit" type="submit" >submit</button>
+                    <a id="button-Signup" >sign up</a>      
+                </div>             
+        </div>
+        </form>
+        <div id="signupContainer" style="display:none;">          
+            <form action="submit" id="signupForm" >
+                <h1>Sign Up</h1>
+                
+                <input type="text" id="signupUsername" placeholder="username"autocomplete="off"> 
+                <div id="signup-mapContainer"></div>
+                
+                <button id="signupSubmit">submit</button>
+            </form>
+        </div> 
+    </main>
+</body>
+</html>
